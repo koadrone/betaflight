@@ -498,10 +498,10 @@ STATIC_UNIT_TESTED gyroHardware_e gyroDetect(gyroDev_t *dev)
         FALLTHROUGH;
 #endif
 
-#ifdef USE_ACCGYRO_BMI270
-    case GYRO_BMI270:
-        if (bmi270SpiGyroDetect(dev)) {
-            gyroHardware = GYRO_BMI270;
+#ifdef USE_ACCGYRO_SPI_BMI088
+    case GYRO_BMI088:
+        if (bmi088SpiGyroDetect(dev)) {
+            gyroHardware = GYRO_BMI088;
             break;
         }
         FALLTHROUGH;

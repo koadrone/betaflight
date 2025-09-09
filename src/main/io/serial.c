@@ -203,7 +203,7 @@ void pgResetFn_serialConfig(serialConfig_t *serialConfig)
         serialPortConfig_t* pCfg = &serialConfig->portConfigs[i];
         pCfg->identifier = serialPortIdentifiers[i];
         pCfg->msp_baudrateIndex = BAUD_115200;
-        pCfg->gps_baudrateIndex = BAUD_57600;
+        pCfg->gps_baudrateIndex = BAUD_115200;
         pCfg->telemetry_baudrateIndex = BAUD_AUTO;
         pCfg->blackbox_baudrateIndex = BAUD_115200;
     }
