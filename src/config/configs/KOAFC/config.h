@@ -24,7 +24,7 @@
 
 #define FC_TARGET_MCU       STM32H743
 #define BOARD_NAME          KOAFC
-#define MANUFACTURER_ID     FALCONSHOP
+#define MANUFACTURER_ID     KOADRONE
 #define SYSTEM_HSE_MHZ      16
 
 // *************** IMU generic ***********************

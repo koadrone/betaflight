@@ -59,6 +59,7 @@ typedef enum {
     GYRO_ICM42688P,
     GYRO_BMI160,
     GYRO_BMI270,
+    GYRO_BMI088,
     GYRO_LSM6DSO,
     GYRO_LSM6DSV16X,
     GYRO_IIM42653,
@@ -106,6 +107,7 @@ typedef struct gyroDev_s {
     sensorGyroReadDataFuncPtr temperatureFn;                  // read temperature if available
     extiCallbackRec_t exti;
     extDevice_t dev;
+    IO_t csnAccPin;
     float scale;                                             // scalefactor
     float gyroZero[XYZ_AXIS_COUNT];
     vector3_t gyroADC;                                       // gyro data after calibration and alignment
@@ -150,6 +152,7 @@ typedef struct accDev_s {
     sensor_align_e accAlign;
     bool dataReady;
     gyroDev_t *gyro;
+    extDevice_t dev;
     bool acc_high_fsr;
     char revisionCode;                                      // a revision code for the sensor, if known
     uint8_t filler[2];

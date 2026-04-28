@@ -110,6 +110,7 @@ typedef enum {
     OWNER_SWD,
     OWNER_RX_SPI_EXPRESSLRS_RESET,
     OWNER_RX_SPI_EXPRESSLRS_BUSY,
+    OWNER_ACC_CS,
     OWNER_SOFTSERIAL_TX,         // TX must be just before RX
     OWNER_SOFTSERIAL_RX,
     OWNER_LPUART_TX,             // TX must be just before RX

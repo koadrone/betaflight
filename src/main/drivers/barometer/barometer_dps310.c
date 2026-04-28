@@ -50,7 +50,7 @@
 
 #if defined(USE_BARO) && (defined(USE_BARO_DPS310) || defined(USE_BARO_SPI_DPS310))
 
-#define DPS310_I2C_ADDR             0x76
+#define DPS310_I2C_ADDR             0x77
 
 #define DPS310_REG_PSR_B2           0x00
 #define DPS310_REG_PSR_B1           0x01
@@ -69,7 +69,7 @@
 #define DPS310_REG_COEF             0x10
 #define DPS310_REG_COEF_SRCE        0x28
 
-#define DPS310_ID_REV_AND_PROD_ID       (0x10)  // Infineon DPS310
+#define DPS310_ID_REV_AND_PROD_ID       (0x11)  // Infineon DPS310
 #define SPL07_003_CHIP_ID               (0x11)  // SPL07_003
 
 #define DPS310_RESET_BIT_SOFT_RST       (0x09)    // 0b1001
